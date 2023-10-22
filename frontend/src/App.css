@@ -1,0 +1,526 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+/* Header  */
+
+p {
+    margin-bottom: 0 !important;
+}
+
+h1 {
+    font-size: 65px !important;
+}
+
+h2 {
+    font-size: 40px !important;
+    font-weight: bold !important;
+}
+.list li{
+    list-style-type: none;
+}
+
+.social-icons span {
+    padding: 0px 4px;
+}
+
+.top-navbar {
+    background-image: url('components/img/top-header-scaled.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff
+}
+
+.logo,
+nav {
+    width: fit-content;
+}
+
+.donate-box {
+    gap: 20px;
+}
+
+button.donate-btn {
+    background-color: #22b6af;
+    border-width: 0px;
+    border-color: #22b6af;
+    border-radius: 0px;
+    border-style: solid;
+    padding: 6px 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.nav-items-flex a {
+    padding: 0px 25px !important;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    border: none !important;
+
+}
+
+
+
+/* Hero  */
+
+.hero {
+    background: linear-gradient(rgba(86, 82, 82, 0.516), rgba(33, 31, 31, 0.248)), url(components/img/hero-home.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+}
+
+.hero-text h1 {
+    font-size: 140px !important;
+    line-height: 140px !important;
+}
+
+p.animate-p {
+    animation: pop 10s infinite;
+
+}
+
+p.before::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    border: 2px solid #22b6af;
+    border-radius: 2px;
+    left: -10px;
+}
+
+.icon-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+
+/* .donation-sec{
+    background-image: url(components/img/map-bg.jpg);
+    background-size: cover;
+    background-position: 1px;
+    z-index: -10;
+} */
+.don-cards {
+    gap: 30px;
+}
+
+button.don-card-btn {
+    position: absolute;
+    bottom: -17px;
+    right: 30px;
+}
+
+.don-box {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    background-color: #28a745 !important;
+    border-radius: 10px;
+}
+
+.vol-card {
+    background-image: url(components/img/banner-1.jpg);
+    background-size: cover;
+}
+
+.brush-btn {
+    background-image: url(components/img/brush-white.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 320px auto;
+}
+
+.new-box {
+    width: 1000px;
+}
+
+.brush-btn button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding: 18px;
+}
+
+.support {
+    background: linear-gradient(rgba(0, 0, 0, 0.338), rgba(0, 0, 0, 0.338)), url(components/img/paral-5.jpg);
+    background-size: cover;
+    padding: 40px 0px;
+}
+
+.support-us-box {
+    background: linear-gradient(rgba(202, 198, 198, 0.136), rgba(255, 255, 255, 0.042)), url(components/img/paral-16.jpg);
+    background-size: cover;
+    background-position: top;
+}
+.about-hero{
+    background-position: center;
+}
+
+.btn-group-donation button {
+    margin: 0px 5px;
+    padding: 6px 10px;
+    background-color: rgba(255, 193, 7);
+    border: none;
+}
+
+.donation-input {
+    padding: 60px 0px;
+}
+
+.support-donation-text {
+    text-align: end;
+}
+
+.d-input :focus {
+    outline: none;
+}
+
+.events-header {
+    background-image: url(components/img/top-header-blue.jpg);
+    background-size: cover;
+}
+
+.event-button button {
+    width: 160px !important;
+}
+
+.event-img {
+    gap: 14px;
+}
+
+p.time-box {
+    position: absolute;
+    width: fit-content;
+    bottom: -8px;
+    left: 19px;
+    font-size: 12px !important;
+}
+
+/* 
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    Center slide text vertically
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+    width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+    width: 40%;
+}
+
+.swiper-car {
+    padding: 0px 10rem !important;
+}
+
+.about-car {
+    background-image: url(components/img/bg-green.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.about-car-list li {
+    list-style-type: none;
+    color: #fff;
+}
+
+.quote-car {
+    height: 280px;
+    background-image: url(components/img/slider2-10.jpg);
+}
+
+.last-slide {
+    background-image: url(components/img/slider2-1.jpg);
+    background-size: cover;
+    height: 588px
+}
+.last-slide-one{
+    background-image: url(components/img/bg-yellow.jpg);
+    background-size: cover;
+    height: 280px;
+}
+.last-slide-two{
+    background-image: url(components/img/bg-dark.jpg);
+    background-size: cover;
+    height: 284px;
+} */
+
+.info-text {
+    background-image: url(components/img/bg-green2.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.progress-div {
+    background-color: rgba(0, 0, 0, 0.284);
+    width: 100%;
+
+}
+
+.inner-prog-div-1 {
+    width: 45%;
+    padding: 2px 0px;
+}
+
+.footer {
+    background-image: url(components/img/paral-10.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.footer-list li {
+    list-style-type: none;
+    padding: 5px 0px;
+}
+
+.footer-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 15px;
+}
+
+.about-para {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+
+.cause{
+    background:linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.356)), url(components/img/paral-3.jpg);
+    background-size: cover;
+}
+.cause-hero-sec{
+    padding: 200px 0px;
+}
+.counter-cause{
+    background: linear-gradient(rgba(36, 33, 33, 0.868) , rgba(36, 33, 33, 0.838) ) ,url(components/img/paral-22.jpg);
+    background-size: cover;
+    filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+    background-position: center;
+}
+.cause-col img{
+    filter: brightness( 85% ) contrast( 100% ) saturate( 75% ) blur( 0px ) hue-rotate( 0deg );
+
+}
+.about-col h1{
+    color: #22B6AF;
+}
+.about-grid-wrap{
+    background-image: url(components/img/map-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.about-banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.24),rgba(0, 0, 0, 0.24)),url(components/img/about-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0px;
+}
+
+/* CSS for the off-canvas menu */
+.off-canvas-menu {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Off-screen initially */
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s;
+    z-index: 999;
+  }
+  
+  .off-canvas-menu.show {
+    right: 0; /* Show the menu when 'showOffCanvas' is true */
+  }
+  
+  .menu-icon {
+    display: none; /* Hide the menu icon on larger screens */
+  }
+  
+  /* Add media queries to show the menu icon and hide the off-canvas menu on smaller screens */
+  @media (max-width: 767px) {
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 1000;
+    }
+  
+    .donate-box {
+      display: none; /* Hide the donate box when the off-canvas menu is shown */
+    }
+  }
+    
+@keyframes pop {
+
+    0%,
+    100% {
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .top-nav {
+        flex-direction: column;
+    }
+    .nav-items-flex {
+        position: absolute;
+        z-index: 999;
+        background: aliceblue;
+        top: -65px;
+        bottom: -460px;
+        max-width: 200px;
+        right: -19px;
+        transition: .3s;
+    }
+
+    .icon-row {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+
+    .icon-box {
+        justify-content: center;
+    }
+
+    .don-cards {
+        flex-direction: column;
+    }
+
+    .new-box {
+        width: auto;
+    }
+
+    .vol-card {
+        padding: 40px 0px;
+    }
+
+    .donation-input {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .support-donation-text {
+        text-align: center !important;
+    }
+
+    .donation-input {
+        padding: 0px 0px;
+    }
+
+    .swiper-car {
+        padding: 0px 0rem !important;
+    }
+    .cause-box{
+        width: auto !important;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+    h1 {
+        font-size: 40px !important;
+    }
+
+    .main-navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero {
+        height: 70vh;
+    }
+
+    .hero-box {
+        flex-direction: column;
+        justify-content: space-between !important;
+        height: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 100px !important;
+        line-height: 100px !important;
+    }
+
+    .animation-box {
+        align-self: end;
+    }
+
+    .icon-row {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+
+    .icon-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .icon-img img {
+        margin-right: 0px !important;
+    }
+
+    .brush-btn {
+        background-size: 215px auto;
+    }
+
+    .brush-btn button {
+        font-size: 16px;
+    }
+
+    .about-para{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-col h1{
+        font-size: 50px !important;
+    }
+
+}
